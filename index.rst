@@ -4,6 +4,8 @@ Advanced Python
 
 .. revealjs:: Welcome
 
+   .. image:: images/python.png
+
 .. revealjs:: Who are we?
 
     Vincent van Leeuwen & Remco Wendt

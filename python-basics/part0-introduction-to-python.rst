@@ -10,10 +10,103 @@ Part 0: Introduction to Python
 
 .. revealjs:: History of Python
 
+    .. image:: ../images/monty_python.png
+
     - Invented 1989 by Guido van Rossum, implemented in C
     - Named after Monty Python's Flying Circus (BBC TV-show)
-    - Exception handling, functions, core datatypes (list, dict, str etc.)
 
+
+.. revealjs:: History of Python
+    :subtitle: started by Guido van Rossum in 1989
+
+    .. image:: ../images/guido_rossum.png
+
+
+.. revealjs:: History of Python
+
+    1989: Python 0.0
+      - Exception handling
+      - Functions
+      - Core datatypes (list, dict, str etc.)
+    1994: Python 1.0
+      - Lambda, map, filter, reduce
+    2000: Python 2.0
+      - Backward compatible with 1.6
+      - Garbage collection
+      - Unicode support
+      - List comprehensions
+    2008: Python 3.0
+      - Backward incompatible
+
+.. revealjs:: Python 2 vs Python 3
+
+    - Little difference for beginners, except print vs print()
+    - Python 2.x ends at 2.7, no new major releases
+    - 3.x is under active development, latest version is 3.6.1
+    - Possible to run both on same machine
+
+
+.. revealjs:: Python 2 vs Python 3
+    :subtitle: print vs print()
+
+    Python 2:
+
+    .. rv_code::
+
+        print 'Foo'
+
+    Python 3:
+
+    .. rv_code::
+
+        print('Foo')
+
+
+.. revealjs:: Python 2 vs Python 3
+    :subtitle: Arithmetic
+
+    Python 2:
+
+    .. rv_code::
+
+        1/2 = 0
+
+    Python 3:
+
+    .. rv_code::
+
+        1 / 2 = 0.5
+        1 // 2  = 0 # old behaviour
+
+
+.. revealjs:: Python 2 vs Python 3
+    :subtitle: Comparisons
+
+    Python 2:
+
+    .. rv_code::
+
+        >>> 42 < 'hello'
+        True
+
+    Python 3:
+
+    .. rv_code::
+
+        >>> 42 < 'hello'
+        Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        TypeError: unorderable types: int() < str()
+
+.. revealjs:: What is Python?
+    :subtitle: An implementation
+
+    - cPython (reference implementation)
+    - Jython (Python running on Java Virtual Machine)
+    - IronPython (C#, C++ compatible)
+    - PyPy
+    - Stackless Python
+    - MicroPython
 
 .. revealjs:: Who uses it?
 
@@ -22,9 +115,11 @@ Part 0: Introduction to Python
     - NASA
     - Industrial Light and Magic
     - Walt Disney
-    - CIA.gov (python/zope/plone)
+    - CIA.gov
 
 .. revealjs:: Welcome to the World of Python
+
+    .. image:: ../images/lotr.png
 
 .. revealjs:: What is Python?
     :subtitle: The language
@@ -44,13 +139,6 @@ Part 0: Introduction to Python
         - Readability
         - Expressiveness
 
-.. revealjs:: What is Python?
-    :subtitle: An implementation
-
-    - cPython (reference implementation)
-    - Jython
-    - IronPython
-    - PyPy
 
 .. revealjs:: What is Python?
     :subtitle: An ecosystem
@@ -68,10 +156,28 @@ Part 0: Introduction to Python
     |
     | https://www.python.org/psf/codeofconduct/
 
-.. revealjs:: Python versions
 
-    - Python 2.7 (used by us)
-    - Python 3.4
+.. revealjs:: When to use Python
+
+    - Websites & APIs (Django, Flask, Bottle)
+    - Data science / AI (Scipy, Numpy, Tensorflow)
+    - Internet of things (Raspberry pi, Arduino)
+    - Desktop apps
+    - Scripting
+    - Scraping / Web crawling (Beautifulsoup / Scrapy)
+
+.. revealjs:: When NOT to use Python
+
+    - Mobile apps on iOS or Android
+    - Frontend development
+
+.. revealjs:: Performance
+
+    .. image:: ../images/performance.png
+
+    Every time string becomes 256 KiB larger program prints number of seconds passed since beginning of test. App's output is being piped to script capturing memory usage (using memstat) for every line printed.
+
+
 
 .. revealjs:: Bootstrapping
 
