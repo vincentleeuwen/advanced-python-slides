@@ -13,13 +13,12 @@ Advanced Python
 .. revealjs:: How we are going to work?
 
     - Learn by doing!
-    - Do as I do & AHA erlebnis
+    - Do as we do & AHA erlebnis
     - Please don't copy & paste. Type it manually and learn!
-
     - First Python warming up
     - Then build a real project in Python
 
-.. revealjs:: Python Basics
+.. revealjs:: Outline for today
 
     .. _python-basics-index:
 
