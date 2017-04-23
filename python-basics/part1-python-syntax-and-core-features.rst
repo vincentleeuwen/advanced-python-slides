@@ -515,6 +515,50 @@ Part 1: Python Syntax and Core Features
         >>> add(1, 3)
         4
 
+.. revealjs:: Classes
+
+    .. rv_code::
+
+        class Animal:
+            def __init__(self, name):
+                self.name = name
+
+        def talk(self):
+            print("Generic animal sound")
+
+        animal = Animal(name="thing")
+        animal.talk()
+
+.. revealjs:: Classes (2)
+
+    Notes:
+
+    - *dunder* ``__init__`` (constructor)
+    - all methods take ``self`` as first parameter
+
+.. revealjs:: Classes (3)
+
+    Subclassing
+
+    .. rv_code::
+
+        class Cat(Animal):
+            def talk(self):
+                print('{0} says, "Meow!"'.format(self.name))
+
+        cat = Cat('Felix')
+        cat.talk() # invoke method
+
+.. revealjs:: Classes (4)
+
+    Naming
+
+    - CamelCase
+    - Don't start with numbers
+    - Nouns
+
+        A noun is a word that functions as the name of some specific thing or set of things, such as living creatures, objects, places, actions, qualities, states of existence, or ideas.
+
 .. revealjs:: Comments
 
     .. rv_code::
@@ -541,7 +585,7 @@ Part 1: Python Syntax and Core Features
             """
             pass
 
-.. revealjs:: Docstrings
+.. revealjs:: Docstrings (2)
 
     Function *docstrings* are accessible via **__doc__** or **help**
 
@@ -560,6 +604,19 @@ Part 1: Python Syntax and Core Features
             Raises:
                 TypeError: if n is not a number.
                 ValueError: if n is negative.
+
+.. revealjs:: Docstrings (3)
+
+    Classes
+
+    .. rv_code::
+
+        class Cheetah(Cat):
+        '''classes can have
+        docstrings'''
+
+        def talk(self):
+            print('Growl')
 
 .. revealjs:: Now for the Python ecosystem
 
