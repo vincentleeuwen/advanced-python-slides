@@ -156,6 +156,7 @@ Part 1: Python Syntax and Core Features
 
       >>> dir("a string")
       ['__add__', '__class__', '__contains__', ... , 'translate', 'upper', 'zfill']
+
       >>> "a string".upper()
       'A STRING'
 
@@ -342,8 +343,11 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: What is False?
 
-    - None
-    - False
+    - ``None``
+
+      - Pythonic way of saying ``NULL``. Evaluates to ``False``
+
+    - ``False``
     - zero of any numeric type, for example: 0, 0.0
     - any empty sequence, for example: '', (), []
     - any empty mapping, for example: {}
@@ -430,7 +434,7 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: Iteration (6)
 
-    Can loop over dictionaries too:
+    Loop over dictionaries:
 
     .. rv_code::
 
@@ -457,6 +461,9 @@ Part 1: Python Syntax and Core Features
         print('The tea is cool enough.')
 
 .. revealjs:: Hint
+
+    .. image:: ../images/train.jpeg
+      :height: 300px
 
     Don't modify *list* or *dictionary* contents while looping over them.
 
@@ -557,7 +564,7 @@ Part 1: Python Syntax and Core Features
     - Don't start with numbers
     - Nouns
 
-        A noun is a word that functions as the name of some specific thing or set of things, such as living creatures, objects, places, actions, qualities, states of existence, or ideas.
+      *A noun is a word that functions as the name of some specific thing or set of things, such as living creatures, objects, places, actions, qualities, states of existence, or ideas.*
 
 .. revealjs:: Comments
 
