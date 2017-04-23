@@ -130,6 +130,7 @@ Part 0: Introduction to Python
      High level, general purpose, interpreted programming language.
 
     - And a funny mix of programming paradigms:
+
         - Imperative
         - Object Oriented
         - Functional
@@ -139,6 +140,7 @@ Part 0: Introduction to Python
     :subtitle: Design philosophy
 
     - Programmer productivity, by emphasizing:
+
         - Readability
         - Expressiveness
 
