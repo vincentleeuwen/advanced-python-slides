@@ -157,6 +157,24 @@ Part 1: Python Syntax and Core Features
        Hi joeri, you are very old
 
 
+.. revealjs:: Strings vs. bytes
+
+    From bytes to string
+
+    .. rv_code::
+
+        >>> b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-16')
+        '蓏콯캁澽苏'
+        >>> b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'.decode('utf-8')
+        'τoρνoς'
+
+    From string to bytes
+
+    .. rv_code::
+
+        >>> 'τoρνoς'.encode('utf-8')
+        b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'
+
 .. revealjs:: Methods & dir
 
    List attributes and methods:
