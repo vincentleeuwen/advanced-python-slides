@@ -249,10 +249,6 @@ Part 0: Introduction to Python
     .. rv_code::
 
         Python 3.6.1 (default, Apr  4 2017, 09:40:51)
-        [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
-        Type "help", "copyright", "credits" or "license" for more information.
-
-        Python 3.6.1 (default, Apr  4 2017, 09:40:51)
         Type 'copyright', 'credits' or 'license' for more information
         IPython 6.0.0 -- An enhanced Interactive Python. Type '?' for help.
 
