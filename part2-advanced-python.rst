@@ -174,7 +174,6 @@ Part 2: Advanced Python
         'false'
 
 
-
 .. revealjs:: Pretty printing code
 
     .. rv_code::
@@ -185,6 +184,8 @@ Part 2: Advanced Python
         pprint(my_dict)
 
 
-.. revealjs:: End
+.. revealjs:: Project time!
+
+    Time for some more hands on practice
 
     :ref:`Back to overview <slides-index>`
