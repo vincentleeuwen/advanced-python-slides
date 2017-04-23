@@ -102,24 +102,24 @@ Part 2: Advanced Python
 
 
 .. revealjs:: Lambda functions
-    :subtitle: Anonymous functions
 
     Instead of:
 
     .. rv_code::
 
-        def filterfunc(x):
-            return x % 3 == 0
+        def square(x):
+            return x * x
 
-        >>> filter(filterfunc, [1, 2, 3, 4, 5, 6, 7, 8, 9])
-        [3, 6, 9]
+        >>> list(map(square, [2, 3, 4]))
+        [4, 9, 16]
 
-    Allows you to do:
+    Allows you to write:
 
     .. rv_code::
 
-        >>> filter(lambda x: x % 3 == 0, [1, 2, 3, 4, 5, 6, 7, 8, 9])
-        [3, 6, 9]
+        >>> list(map(lambda x: x * x, [2, 3, 4]))
+        [4, 9, 16]
+
 
 .. revealjs:: With statement (context managers)
 
