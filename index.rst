@@ -5,6 +5,7 @@ Advanced Python
 .. revealjs:: Welcome
 
    .. image:: images/python.png
+      :height: 500px
 
 .. revealjs:: Who are we?
 

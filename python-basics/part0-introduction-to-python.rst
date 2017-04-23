@@ -11,6 +11,7 @@ Part 0: Introduction to Python
 .. revealjs:: History of Python
 
     .. image:: ../images/monty_python.png
+       :height: 400px
 
     - Invented 1989 by Guido van Rossum, implemented in C
     - Named after Monty Python's Flying Circus (BBC TV-show)
@@ -20,6 +21,7 @@ Part 0: Introduction to Python
     :subtitle: started by Guido van Rossum in 1989
 
     .. image:: ../images/guido_rossum.png
+       :height: 300px
 
 
 .. revealjs:: History of Python
@@ -120,6 +122,7 @@ Part 0: Introduction to Python
 .. revealjs:: Welcome to the World of Python
 
     .. image:: ../images/lotr.png
+       :height: 500px
 
 .. revealjs:: What is Python?
     :subtitle: The language
@@ -169,7 +172,7 @@ Part 0: Introduction to Python
 .. revealjs:: When NOT to use Python
 
     - Mobile apps on iOS or Android
-    - Frontend development
+    - Frontend development (doesn't run in browser like JS)
 
 
 .. revealjs:: Bootstrapping
