@@ -192,6 +192,16 @@ Part 2: Advanced Python
         CRITICAL:root:Can't connect to network
 
 
+.. revealjs:: Debugging
+
+    .. rv_code::
+
+        def some_function():
+            some_code()
+            import ipdb; ipdb.set_trace()  # Breakpoint
+            some_more_code()
+
+
 .. revealjs:: Pretty printing code
 
     .. rv_code::
