@@ -266,12 +266,13 @@ Part 0: Introduction to Python
 
     .. rv_code::
 
-        $ git clone https://bitbucket.org/django-bootcamp/slides.git
-        $ cd slides
+        $ git clone https://bitbucket.org/cours/advanced-python-slides.git
+        $ cd advanced-python-slides
         $ pip install -r requirements.txt
+        $ mkdir _static
         $ make html
         $ open _build/html/index.html
 
 .. revealjs:: End
 
-    :ref:`Back to Python Basics <python-basics-index>`
+    :ref:`Back to overview <python-basics-index>`
