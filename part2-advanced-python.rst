@@ -7,6 +7,17 @@ Part 2: Advanced Python
    .. image:: images/advanced_python.jpg
       :height: 650px
 
+
+.. revealjs:: Decimal
+
+    .. rv_code::
+
+        from decimal import Decimal
+        Decimal('0.6')
+
+    Float is approx if number can't be built from exact powers of two
+
+
 .. revealjs:: Absolute importing
 
     Stuff that you want to import should be on your python path.
