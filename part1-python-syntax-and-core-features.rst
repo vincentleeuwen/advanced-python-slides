@@ -290,7 +290,7 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: Dictionary
 
-    - Also called *hashmap* or *asicative array* elsewhere
+    - Also called *hashmap* or *assiociative array* elsewhere
     - Syntax shows similiarities to ``JSON``
 
     .. rv_code::
