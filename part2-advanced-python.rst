@@ -202,6 +202,22 @@ Part 2: Advanced Python
             some_more_code()
 
 
+.. revealjs:: Unit testing
+
+    pytest
+
+    .. rv_code::
+
+        import pytest
+        @pytest.mark.parametrize(("input", "expected"), [
+            ("3+5", 8),
+            ("2+4", 6),
+            ("6*9", 42),
+        ])
+        def test_eval(input, expected):
+            assert eval(input) == expected
+
+
 .. revealjs:: Pretty printing code
 
     .. rv_code::
