@@ -62,6 +62,7 @@ Part 2: Advanced Python
 
         from hello_world.properties.models import MyModel  # can be less flexible
 
+.. revealjs:: list comprehensions
 
     .. rv_code::
 
