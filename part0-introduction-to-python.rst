@@ -226,7 +226,7 @@ Part 0: Introduction to Python
 
     .. rv_code::
 
-        ipython==6.0.0
+        ipython==5.3.0
 
     Install with:
 
