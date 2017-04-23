@@ -373,7 +373,7 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: Documentation links
 
-    - https://docs.python.org/2/library/index.html
+    - https://docs.python.org/3/library/index.html
 
 .. revealjs:: End
 
