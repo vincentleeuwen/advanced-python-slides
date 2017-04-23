@@ -28,6 +28,14 @@ Part 1: Python Syntax and Core Features
 
     Best to use space indentation of 4 spaces.
 
+.. revealjs:: Naming
+
+    - lowercase
+    - undescore_between_words (**snake_case**)
+    - don't start with numbers
+
+    See https://www.python.org/dev/peps/pep-0008/
+
 .. revealjs:: Variables
     :subtitle: Python is Strongly, Dynamically typed
 
@@ -48,6 +56,119 @@ Part 1: Python Syntax and Core Features
         TypeError: cannot concatenate 'str' and 'int' objects
         >>> a_string + str(a_number)
         'Hello it is now 1980'
+
+.. revealjs:: Objects
+
+   Everything in Python is an object that has:
+
+      - an identity (id)
+      - a value (mutable or immutable)
+
+.. revealjs:: ID
+
+   .. rv_code::
+
+      >>> a = 4
+      >>> id(a)
+      140308434146016
+
+.. revealjs:: Value
+
+   - **Mutable**: When you alter the item, the *id* is still the same.
+
+     - Dictionary, List.
+
+   - **Immutable**
+
+     - String, Integer, Tuple
+
+.. revealjs:: Mutable
+
+   .. rv_code::
+
+      >>> b = []
+      >>> id(b)
+      4560462696
+      >>> b.append(3)
+      >>> b
+      [3]
+      >>> id(b)
+      4560462696 # SAME!
+
+.. revealjs:: Immutable
+
+   .. rv_code::
+
+      >>> a = 4
+      >>> id(a)
+      4322130288
+      >>> a = a + 1
+      >>> id(a)
+      4322130320 # DIFFERENT!
+
+.. revealjs:: Math
+
+   +, -, *, /, ** (power), % (modulo)
+
+  .. rv_code::
+
+     >>> 6 % 2
+     0
+
+.. revealjs:: Strings
+
+   .. rv_code::
+
+      name = 'remco'
+      with_quote = "I ain't gonna"
+      longer = """This string has
+      multiple lines
+      in it"""
+
+   Escape with backslash
+
+   .. rv_code::
+
+      >>> print('He said, "I\'m sorry"')
+      He said, "I'm sorry"
+
+.. revealjs:: String interpolation
+
+   Positional:
+
+   .. rv_code::
+
+       >>> print('Let me {0}, that is {1}'.format('see', 'strange'))
+       Let me see, that is strange
+
+   Key based:
+
+   .. rv_code::
+
+       >>> print('Hi {name}, you are {age} years old.'.format(name='joeri', age=35))
+       Hi joeri, you are 35 years old
+
+.. revealjs:: Methods & dir
+
+   List attributes and methods:
+
+   .. rv_code::
+
+      >>> dir("a string")
+      ['__add__', '__class__', '__contains__', ... , 'translate', 'upper', 'zfill']
+      >>> "a string".upper()
+      'A STRING'
+
+.. revealjs:: Help
+
+    .. rv_code::
+
+       >>> help("a string".upper)
+       Help on built-in function upper:
+        upper(...) method of builtins.str instance
+            S.upper() -> str
+
+            Return a copy of S converted to uppercase.
 
 .. revealjs:: Base types
 
@@ -70,47 +191,61 @@ Part 1: Python Syntax and Core Features
         >>> a_tuple = ('hello', 'world')  # Mind single element form: ('hello', )
         >>> a_set = {'hello', 'world'}
 
-    And their operations:
 
-    .. rv_code::
+.. revealjs:: List operations
 
-        >>> 'hello' in a_list
-        True
+   .. rv_code::
 
-    .. rv_code::
+       >>> a_list = ['hello']
+       >>> a_list.append('world')
+       >>> 'world' in a_list
+       True
 
-        >>> a_list + ['again']  # Concatenation
-        ['hello', 'world', 'again']
+   .. rv_code::
 
-        >>> new_list = ['get', 'only', 'part', 'of', 'me', 'now']
-        >>> new_list[2:5]  # slicing
-        ['part', 'of', 'me']
+       >>> a_list + ['again']  # Concatenation
+       ['hello', 'world', 'again']
 
-    .. rv_code::
+       >>> new_list = ['get', 'only', 'part', 'of', 'me', 'now']
+       >>> new_list[2:5]  # slicing
+       ['part', 'of', 'me']
 
-        >>> len(a_list)  # length
-        2
+   .. rv_code::
 
-        >>> max([1, 99, 6])  # also min()
-        99
-        >>> a_list.index('world')
-        1
+       >>> len(a_list)  # length
+       2
 
-.. revealjs:: String interpolation
+       >>> max([1, 99, 6])  # also min()
+       99
+       >>> a_list.index('world')
+       1
 
-    Positional:
+.. revealjs:: Handy list methods
 
-    .. rv_code::
+   - l.append(x)
 
-        >>> print('Let me {0}, that is {1}'.format('see', 'strange'))
-        Let me see, that is strange
+     - Insert x at end of list
 
-    Key based:
+   - l.sort()
 
-    .. rv_code::
+     - In place sort
 
-        >>> print('Hi {name}, you are {age} years old.'.format(name='joeri', age=35))
-        Hi joeri, you are 35 years old
+   - l.reverse()
+
+     - Reverse list in place
+
+   - l.remove(item)
+
+     - Remove first *item* found
+
+   - l.pop()
+
+     - Remove / return item at end of list
+
+   .. rv_code::
+
+      >>> dir([])
+      ['__add__', '__class__', ..., 'insert', 'pop', 'remove', 'reverse', 'sort']
 
 .. revealjs:: Set special powers
 
@@ -313,6 +448,26 @@ Part 1: Python Syntax and Core Features
 
             """
             pass
+
+.. revealjs:: Docstrings
+
+    Function *docstrings* are accessible via **__doc__** or **help**
+
+    .. rv_code::
+
+        >>> help(square_root)
+        Help on function square_root in module __main__:
+
+        square_root(n)
+            Calculate the square root of a number.
+
+            Args:
+                n: the number to get the square root of.
+            Returns:
+                the square root of n.
+            Raises:
+                TypeError: if n is not a number.
+                ValueError: if n is negative.
 
 .. revealjs:: Now for the Python ecosystem
 
