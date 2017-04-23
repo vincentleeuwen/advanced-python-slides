@@ -649,8 +649,8 @@ Part 1: Python Syntax and Core Features
         '''classes can have
         docstrings'''
 
-        def talk(self):
-            print('Growl')
+            def talk(self):
+                print('Growl')
 
 .. revealjs:: Now for the Python ecosystem
 
