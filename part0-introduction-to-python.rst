@@ -179,16 +179,10 @@ Part 0: Introduction to Python
     - Frontend development (doesn't run in browser like JS)
 
 
-.. revealjs:: Bootstrapping
+.. revealjs:: Ubuntu 16.10 virtualbox
 
-    If you have the vagrant box already installed, do the following:
-
-    .. rv_code::
-
-        $ vagrant ssh
-        $ /opt/rh/python27/root/bin/virtualenv env
-        $ source env/bin/activate
-        $ cd /vagrant
+    - login: advancedpython
+    - password: python
 
 
 .. revealjs:: Virtualenv
