@@ -146,6 +146,18 @@ Part 2: Advanced Python
         >>> 'true' if False else 'false'
         'false'
 
+
+
+.. revealjs:: Pretty printing code
+
+    .. rv_code::
+
+        from pprint import pprint
+
+        my_dict = {'name': 'Yasoob', 'age': 'undefined', 'personality': 'awesome'}
+        pprint(my_dict)
+
+
 .. revealjs:: End
 
     :ref:`Back to overview <slides-index>`
