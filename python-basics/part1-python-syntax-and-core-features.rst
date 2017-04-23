@@ -324,22 +324,24 @@ Part 1: Python Syntax and Core Features
 
     .. rv_code::
 
-        $ virtualenv myenv
-        New python executable in myenv/bin/python2.7
-        Also creating executable in myenv/bin/python
-        Installing setuptools, pip...done.
+        $ virtualenv -p python3 myvenv
+        Running virtualenv with interpreter /usr/local/bin/python3
+        Using base prefix '/usr/local/Cellar/python3/3.6.1/Frameworks/Python.framework/Versions/3.6'
+        New python executable in /Users/vincentvanleeuwen/Desktop/venv/bin/python3.6
+        Also creating executable in /Users/vincentvanleeuwen/Desktop/venv/bin/python
+        Installing setuptools, pip, wheel...done.
 
     Then activate it:
 
     .. rv_code::
 
         $ source myenv/bin/activate
-        (myenv) $ pip install Django
-        Downloading/unpacking Django
-            Downloading Django-1.7.4-py2.py3-none-any.whl (7.4MB): 7.4MB downloaded
-        Installing collected packages: Django
-        Successfully installed Django
-        Cleaning up...
+        (myenv) $ pip install ipython
+        Collecting ipython
+        Downloading ipython-6.0.0-py3-none-any.whl (736kB)
+          100% |████████████████████████████████| 737kB 1.3MB/s
+
+        etc...
 
 .. revealjs:: pip
 
@@ -349,8 +351,7 @@ Part 1: Python Syntax and Core Features
 
     .. rv_code::
 
-        Django==1.7.4
-        ipython==2.3.1
+        ipython==6.0.0
 
     Install with:
 
