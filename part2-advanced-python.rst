@@ -7,8 +7,6 @@ Part 2: Advanced Python
    .. image:: images/advanced_python.jpg
       :height: 650px
 
-.. revealjs:: Advanced python
-
 .. revealjs:: Absolute importing
 
     Stuff that you want to import should be on your python path.
