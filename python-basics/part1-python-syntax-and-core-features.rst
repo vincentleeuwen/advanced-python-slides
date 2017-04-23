@@ -108,7 +108,7 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: Math
 
-   +, -, *, /, ** (power), % (modulo)
+   ``+, -, *, /, ** (power), % (modulo)``
 
   .. rv_code::
 
@@ -287,7 +287,6 @@ Part 1: Python Syntax and Core Features
         >>> del a_dict['another_key']
         {'key': 'new_value'}
 
-
 .. revealjs:: Boolean logic
 
     .. rv_code::
@@ -296,6 +295,22 @@ Part 1: Python Syntax and Core Features
         False
         >>> print(not(True or False))
         False
+
+.. revealjs:: Boolean note
+
+    Parenthesis are only required for precedence
+
+    .. rv_code::
+
+        if (x > 10):
+            print("Big")
+
+    Same as:
+
+    .. rv_code::
+
+        if x > 10:
+            print("Big")
 
 .. revealjs:: Comparisons
 
@@ -309,7 +324,21 @@ Part 1: Python Syntax and Core Features
         >>> print(b is None)  # Compares identity: reference to same object
         True
 
-    And all the usual suspects: < <= > >= != ==
+    And all the usual suspects: ``< <= > >= != ==``
+
+.. revealjs:: Chained comparisons
+
+    .. rv_code::
+
+        if 3 < x < 5:
+            print("Four!")
+
+    Same as:
+
+    .. rv_code::
+
+        if x > 3 and x < 5:
+            print("Four!")
 
 .. revealjs:: What is False?
 
@@ -332,8 +361,7 @@ Part 1: Python Syntax and Core Features
         else:
             print('youngster')
 
-
-.. revealjs:: For loops
+.. revealjs:: Iteration (1)
 
     For loops always iterate over items in a sequence:
 
@@ -357,6 +385,66 @@ Part 1: Python Syntax and Core Features
         >>> range(-10, -100, -30)
         [-10, -40, -70]
 
+.. revealjs:: Iteration (2)
+
+    Java/C-esque style of objects in array access (BAD)
+
+    .. rv_code::
+
+        animals = ['cat', 'dog', 'bird']
+        for index in range(len(animals)): # DON'T DO THIS!
+            print(index, animals[index])
+
+.. revealjs:: Iteration (3)
+
+    If you need indices, use ``enumerate``
+
+    .. rv_code::
+
+        animals = ['cat', 'dog', 'bird']
+        for index, value in enumerate(animals):
+            print(index, value)
+
+.. revealjs:: Iteration (4)
+
+    Can ``break`` out of nearest loop
+
+    .. rv_code::
+
+        for item in sequence:
+            # process until first negative
+            if item < 0:
+                break
+            # process item
+
+.. revealjs:: Iteration (5)
+
+    Can ``continue`` to skip over items
+
+    .. rv_code::
+
+        for item in sequence:
+            if item < 0:
+                continue
+            # process all positive items
+
+.. revealjs:: Iteration (6)
+
+    Can loop over dictionaries too:
+
+    .. rv_code::
+
+        my_dict = {"name":"matt", "cash": 5.45}
+
+        for key in my_dict.keys():
+            # process keys
+
+        for value in my_dict.values():
+            # process values
+
+        for key, value in my_dict.items():
+            # process items
+
 .. revealjs:: While loops
 
     .. rv_code::
@@ -367,6 +455,10 @@ Part 1: Python Syntax and Core Features
             temperature = temperature - 1
 
         print('The tea is cool enough.')
+
+.. revealjs:: Hint
+
+    Don't modify *list* or *dictionary* contents while looping over them.
 
 .. revealjs:: Functions
 
