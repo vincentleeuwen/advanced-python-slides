@@ -207,7 +207,7 @@ Part 0: Introduction to Python
         $ source myenv/bin/activate
         (myenv) $ pip install ipython
         Collecting ipython
-        Downloading ipython-6.0.0-py3-none-any.whl (736kB)
+        Downloading ipython-5.3.0-py3-none-any.whl (736kB)
           100% |████████████████████████████████| 737kB 1.3MB/s
 
         etc...
@@ -244,7 +244,7 @@ Part 0: Introduction to Python
 
         Python 3.6.1 (default, Apr  4 2017, 09:40:51)
         Type 'copyright', 'credits' or 'license' for more information
-        IPython 6.0.0 -- An enhanced Interactive Python. Type '?' for help.
+        IPython 5.3.0 -- An enhanced Interactive Python. Type '?' for help.
 
         In [1]:
 
