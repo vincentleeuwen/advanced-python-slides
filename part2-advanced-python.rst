@@ -62,12 +62,27 @@ Part 2: Advanced Python
 
         from hello_world.properties.models import MyModel  # can be less flexible
 
-.. revealjs:: List comprehensions
 
     .. rv_code::
 
         >>> [x * 2 for x in range(10) if x % 2 == 0]
         [0, 4, 8, 12, 16]
+
+
+.. revealjs:: dict comprehensions
+
+    .. rv_code::
+
+        >>> {x: x * 2 for x in range(10) if x % 2 == 0}
+        {0: 0, 2: 4, 4: 8, 6: 12, 8: 16}
+
+.. revealjs:: set comprehensions
+
+    .. rv_code::
+
+        >>> squared = {x**2 for x in [1, 1, 2]}
+        {1, 4}
+
 
 .. revealjs:: Lambda functions
     :subtitle: Anonymous functions
