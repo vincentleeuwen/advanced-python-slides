@@ -238,8 +238,8 @@ Part 0: Introduction to Python
 
     Better Python shells:
 
-    .. image:: images/python_vs_ipython.jpg
-        :alt: Python vs iPython shell
+    .. image:: images/python_vs_ipython.png
+       :alt: Python vs iPython shell
 
 
 .. revealjs:: IPython
