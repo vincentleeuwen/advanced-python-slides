@@ -2,6 +2,11 @@
 Part 2: Advanced Python
 =======================
 
+.. revealjs::
+
+   .. image:: images/advanced_python.jpg
+      :height: 650px
+
 .. revealjs:: Advanced python
 
 .. revealjs:: Absolute importing
