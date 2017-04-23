@@ -26,3 +26,4 @@ Advanced Python
 
         python-basics/part0-introduction-to-python
         python-basics/part1-python-syntax-and-core-features
+        python-basics/part2-advanced-python
