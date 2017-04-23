@@ -171,13 +171,6 @@ Part 0: Introduction to Python
     - Mobile apps on iOS or Android
     - Frontend development
 
-.. revealjs:: Performance
-
-    .. image:: ../images/performance.png
-
-    Every time string becomes 256 KiB larger program prints number of seconds passed since beginning of test. App's output is being piped to script capturing memory usage (using memstat) for every line printed.
-
-
 
 .. revealjs:: Bootstrapping
 
