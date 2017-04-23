@@ -489,7 +489,7 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: Hint
 
-    .. image:: ../images/train.jpeg
+    .. image:: images/train.jpeg
       :height: 300px
 
     Don't modify *list* or *dictionary* contents while looping over them.
@@ -664,4 +664,4 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: End
 
-    :ref:`Back to overview <python-basics-index>`
+    :ref:`Back to overview <slides-index>`

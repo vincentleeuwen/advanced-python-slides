@@ -120,4 +120,4 @@ Part 2: Advanced Python
 
 .. revealjs:: End
 
-    :ref:`Back to overview <python-basics-index>`
+    :ref:`Back to overview <slides-index>`

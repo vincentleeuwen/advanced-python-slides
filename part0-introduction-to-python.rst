@@ -10,7 +10,7 @@ Part 0: Introduction to Python
 
 .. revealjs:: History of Python
 
-    .. image:: ../images/monty_python.png
+    .. image:: images/monty_python.png
        :height: 400px
 
     - Invented 1989 by Guido van Rossum, implemented in C
@@ -20,7 +20,7 @@ Part 0: Introduction to Python
 .. revealjs:: History of Python
     :subtitle: started by Guido van Rossum in 1989
 
-    .. image:: ../images/guido_rossum.png
+    .. image:: images/guido_rossum.png
        :height: 300px
 
 
@@ -121,7 +121,7 @@ Part 0: Introduction to Python
 
 .. revealjs:: Welcome to the World of Python
 
-    .. image:: ../images/lotr.png
+    .. image:: images/lotr.png
        :height: 500px
 
 .. revealjs:: What is Python?
@@ -236,7 +236,7 @@ Part 0: Introduction to Python
 
     Better Python shells:
 
-    .. image:: ../images/python_vs_ipython.jpg
+    .. image:: images/python_vs_ipython.jpg
         :alt: Python vs iPython shell
 
 
@@ -280,4 +280,4 @@ Part 0: Introduction to Python
 
 .. revealjs:: End
 
-    :ref:`Back to overview <python-basics-index>`
+    :ref:`Back to overview <slides-index>`

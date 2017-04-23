@@ -21,10 +21,10 @@ Advanced Python
 
 .. revealjs:: Outline for today
 
-    .. _python-basics-index:
+    .. _slides-index:
 
     .. toctree::
 
-        python-basics/part0-introduction-to-python
-        python-basics/part1-python-syntax-and-core-features
-        python-basics/part2-advanced-python
+        part0-introduction-to-python
+        part1-python-syntax-and-core-features
+        part2-advanced-python
