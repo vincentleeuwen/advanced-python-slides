@@ -193,19 +193,14 @@ Part 0: Introduction to Python
 
     .. rv_code::
 
-        $ virtualenv -p python3 myvenv
-        Running virtualenv with interpreter /usr/local/bin/python3
-        Using base prefix '/usr/local/Cellar/python3/3.6.1/Frameworks/Python.framework/Versions/3.6'
-        New python executable in /Users/vincentvanleeuwen/Desktop/venv/bin/python3.6
-        Also creating executable in /Users/vincentvanleeuwen/Desktop/venv/bin/python
-        Installing setuptools, pip, wheel...done.
+        $ python -m venv .venv
 
     Then activate it:
 
     .. rv_code::
 
-        $ source myenv/bin/activate
-        (myenv) $ pip install ipython
+        $ source .venv/bin/activate
+        (.venv) $ pip install ipython
         Collecting ipython
         Downloading ipython-5.3.0-py3-none-any.whl (736kB)
           100% |████████████████████████████████| 737kB 1.3MB/s
