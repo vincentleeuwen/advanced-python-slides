@@ -114,6 +114,8 @@ Part 0: Introduction to Python
 
     - Google
     - Youtube
+    - Instagram
+    - nu.nl
     - NASA
     - Industrial Light and Magic
     - Walt Disney
