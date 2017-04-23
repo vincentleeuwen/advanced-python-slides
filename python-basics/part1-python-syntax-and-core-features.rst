@@ -490,4 +490,4 @@ Part 1: Python Syntax and Core Features
 
 .. revealjs:: End
 
-    :ref:`Back to Python Basics <python-basics-index>`
+    :ref:`Back to overview <python-basics-index>`
