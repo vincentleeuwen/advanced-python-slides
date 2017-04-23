@@ -288,6 +288,27 @@ Part 1: Python Syntax and Core Features
         >>> del a_dict['another_key']
         {'key': 'new_value'}
 
+.. revealjs:: Dictionary
+
+    - Also called *hashmap* or *asicative array* elsewhere
+    - Syntax shows similiarities to ``JSON``
+
+    .. rv_code::
+        // JSON
+        {
+          "name": "Bruce Wayne",
+          "age": 30,
+          "superhero": true
+        }
+
+    .. rv_code::
+        # Python
+        {
+          "name": "Bruce Wayne",
+          "age": 30,
+          "superhero": True
+        }
+
 .. revealjs:: Boolean logic
 
     .. rv_code::
@@ -400,6 +421,12 @@ Part 1: Python Syntax and Core Features
             print(index, animals[index])
 
 .. revealjs:: Iteration (3)
+
+    .. rv_code::
+
+        animals = ['cat', 'dog', 'bird']
+        for animal in animals:
+            print(animal)
 
     If you need indices, use ``enumerate``
 
