@@ -174,6 +174,24 @@ Part 2: Advanced Python
         'false'
 
 
+.. revealjs:: Logging
+
+    .. rv_code::
+
+        import logging
+        logging.basicConfig(level=logging.INFO)
+
+        logging.info('Loaded config from your homedir')
+        logging.warning('Some font file not found')
+        logging.critical("Can't connect to network")
+
+    .. rv_code::
+
+        INFO:root:Loaded config from your homedir
+        WARNING:root:Some font file not found
+        CRITICAL:root:Can't connect to network
+
+
 .. revealjs:: Pretty printing code
 
     .. rv_code::
