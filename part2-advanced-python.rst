@@ -105,6 +105,15 @@ Part 2: Advanced Python
         >>> filter(lambda x: x % 3 == 0, [1, 2, 3, 4, 5, 6, 7, 8, 9])
         [3, 6, 9]
 
+.. revealjs:: With statement (context managers)
+
+    .. rv_code::
+
+        >>> with open('/tmp/workfile', 'r') as f:
+        ...     read_data = f.read()
+        >>> f.closed
+        True
+
 
 .. revealjs:: Exceptions
 
