@@ -84,6 +84,22 @@ Part 2: Advanced Python
         >>> squared = {x**2 for x in [1, 1, 2]}
         {1, 4}
 
+.. revealjs:: Decorators
+
+    .. rv_code::
+
+        @lru_cache(maxsize=None)
+        def fib(n):
+            if n < 2:
+                return n
+            return fib(n-1) + fib(n-2)
+
+        >>> print([fib(n) for n in range(16)])
+        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610]
+
+        >>> print(fib.cache_info())
+        CacheInfo(hits=28, misses=16, maxsize=None, currsize=16)
+
 
 .. revealjs:: Lambda functions
     :subtitle: Anonymous functions
