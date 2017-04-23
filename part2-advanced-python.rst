@@ -101,7 +101,7 @@ Part 2: Advanced Python
         CacheInfo(hits=28, misses=16, maxsize=None, currsize=16)
 
 
-.. revealjs:: Lambda functions
+.. revealjs:: Lambda functions / map
 
     Instead of:
 
