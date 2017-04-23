@@ -148,6 +148,15 @@ Part 1: Python Syntax and Core Features
        >>> print('Hi {name}, you are {age} years old.'.format(name='joeri', age=35))
        Hi joeri, you are 35 years old
 
+   New Python 3.6 syntax
+
+   .. rv_code::
+
+       >>> name = 'joeri'
+       >>> print(f'Hi {name}, you are very old.')
+       Hi joeri, you are very old
+
+
 .. revealjs:: Methods & dir
 
    List attributes and methods:
