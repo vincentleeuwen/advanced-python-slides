@@ -241,14 +241,13 @@ Part 0: Introduction to Python
 
     .. rv_code::
 
-        Python 2.7.8 (default, Oct 19 2014, 16:03:53)
-        Type "copyright", "credits" or "license" for more information.
+        Python 3.6.1 (default, Apr  4 2017, 09:40:51)
+        [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)] on darwin
+        Type "help", "copyright", "credits" or "license" for more information.
 
-        IPython 2.3.1 -- An enhanced Interactive Python.
-        ?         -> Introduction and overview of IPython's features.
-        %quickref -> Quick reference.
-        help      -> Python's own help system.
-        object?   -> Details about 'object', use 'object??' for extra details.
+        Python 3.6.1 (default, Apr  4 2017, 09:40:51)
+        Type 'copyright', 'credits' or 'license' for more information
+        IPython 6.0.0 -- An enhanced Interactive Python. Type '?' for help.
 
         In [1]:
 
