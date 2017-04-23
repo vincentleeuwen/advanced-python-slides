@@ -242,9 +242,9 @@ Part 0: Introduction to Python
         :alt: Python vs iPython shell
 
 
-.. revealjs:: iPython
+.. revealjs:: IPython
 
-    You should now see the iPython shell:
+    You should now see the IPython shell:
 
     .. rv_code::
 
