@@ -258,7 +258,7 @@ Part 0: Introduction to Python
 
     .. rv_code::
 
-        $ git clone https://bitbucket.org/cours/advanced-python-slides.git
+        $ git clone git@bitbucket.org:cours/advanced-python-slides.git
         $ cd advanced-python-slides
         $ pip install -r requirements.txt
         $ mkdir _static
