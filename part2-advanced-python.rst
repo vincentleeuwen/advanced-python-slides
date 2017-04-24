@@ -7,7 +7,6 @@ Part 2: Advanced Python
    .. image:: images/advanced_python.jpg
       :height: 650px
 
-
 .. revealjs:: Decimal
 
     .. rv_code::
@@ -16,7 +15,6 @@ Part 2: Advanced Python
         Decimal('0.6')
 
     Float is approx if number can't be built from exact powers of two
-
 
 .. revealjs:: Absolute importing
 
@@ -111,7 +109,6 @@ Part 2: Advanced Python
         >>> print(fib.cache_info())
         CacheInfo(hits=28, misses=16, maxsize=None, currsize=16)
 
-
 .. revealjs:: Lambda functions / map
 
     Instead of:
@@ -131,7 +128,6 @@ Part 2: Advanced Python
         >>> list(map(lambda x: x * x, [2, 3, 4]))
         [4, 9, 16]
 
-
 .. revealjs:: With statement (context managers)
 
     .. rv_code::
@@ -140,7 +136,6 @@ Part 2: Advanced Python
         ...     read_data = f.read()
         >>> f.closed
         True
-
 
 .. revealjs:: Exceptions
 
@@ -164,16 +159,6 @@ Part 2: Advanced Python
         finally:
             print "I'm always executed"
 
-.. revealjs:: Ternary operator
-
-    .. rv_code::
-
-        >>> 'true' if True else 'false'
-        'true'
-        >>> 'true' if False else 'false'
-        'false'
-
-
 .. revealjs:: Logging
 
     .. rv_code::
@@ -191,7 +176,6 @@ Part 2: Advanced Python
         WARNING:root:Some font file not found
         CRITICAL:root:Can't connect to network
 
-
 .. revealjs:: Debugging
 
     .. rv_code::
@@ -200,7 +184,6 @@ Part 2: Advanced Python
             some_code()
             import ipdb; ipdb.set_trace()  # Breakpoint
             some_more_code()
-
 
 .. revealjs:: Unit testing
 
@@ -217,6 +200,14 @@ Part 2: Advanced Python
         def test_eval(input, expected):
             assert eval(input) == expected
 
+.. revealjs:: Ternary operator
+
+    .. rv_code::
+
+        >>> 'true' if True else 'false'
+        'true'
+        >>> 'true' if False else 'false'
+        'false'
 
 .. revealjs:: Pretty printing code
 
@@ -226,7 +217,6 @@ Part 2: Advanced Python
 
         my_dict = {'name': 'Yasoob', 'age': 'undefined', 'personality': 'awesome'}
         pprint(my_dict)
-
 
 .. revealjs:: Project time!
 
